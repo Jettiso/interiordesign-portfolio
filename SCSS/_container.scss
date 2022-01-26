@@ -1,6 +1,7 @@
-
+@use './UTILS/variables';
 
 .container {
     width: 90vw;
     margin: 0 auto;
+    font-family: variables.$font;
 }

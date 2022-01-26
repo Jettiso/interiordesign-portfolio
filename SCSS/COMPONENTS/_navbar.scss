@@ -9,7 +9,6 @@ nav {
 }
 
 .nav {
-    font-family: 'Roboto', sans-serif;
     @include mixins.flex(space-between, row);
     height: 100%;
     .logo {
@@ -22,7 +21,7 @@ nav {
         &-items {
             padding: 1.2rem 1rem;
             margin-left: 1rem;
-            color: #2b2b2b;
+            color: #000000;
             text-transform: capitalize;
             height: 100%;
         }
@@ -31,6 +30,6 @@ nav {
 }
 
 .current {  
-    background: #2b2b2b;
+    background: #000000;
     color: #f2f2f2;
 }

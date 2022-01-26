@@ -1,4 +1,5 @@
 @use '../UTILS/reset';
+@use '../UTILS/mixins';
 
 .grid {
     display: grid;
@@ -8,12 +9,20 @@
         font-size: 4rem;
         grid-column: 2 / span 12;
         grid-row: 1 / span 2;
-        font-family: 'Roboto', sans-serif;
     }
     p {
         grid-column: 2 / span 2;
         grid-row: 2 / span 1;
         align-self: center;
+    }
+}
+
+.imgContainer {
+    h2 {
+        text-transform: capitalize;
+    }
+    p {
+        color: #a5a5a5;
     }
 }
 
@@ -32,13 +41,13 @@
 
 .imgWrapper {
     padding: .5rem;
+    background-color: white;
+    margin-bottom: 1rem;
 }
 
 .socials {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    grid-column: 1 / span 6
+    @include mixins.flex(space-between, row);
+    grid-column: 1 / span 6;
 }
 
 .fab {
@@ -51,7 +60,35 @@
 }
 
 .info__container {
+    @include mixins.flex(center, row);
     grid-column: 10 / span 8;
     border: 2px solid black;
     border-bottom: none;
+    padding: 2rem;
+    p {
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+}
+
+.projects__btn {
+    @include mixins.flex(center, column);
+    grid-column: 17 / span 4;
+    grid-row: 3 / span 2;
+}
+
+.projBtn {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-bottom: .5rem;
+}
+
+.fa-arrow-right {
+    color: white;
+    font-size: 2.5rem;
 }
