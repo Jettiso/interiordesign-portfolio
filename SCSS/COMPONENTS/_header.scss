@@ -1,9 +1,10 @@
-@use '../UTILS/reset';
-@use '../UTILS/mixins';
-@use '../UTILS/variables';
+@use "../UTILS/reset";
+@use "../UTILS/mixins";
+@use "../UTILS/variables";
+
 
 .grid {
-    @include mixins.grid(repeat(20,1fr), repeat(5, 1fr));   
+    @include mixins.grid(repeat(20, 1fr), repeat(5, 1fr));
     h1 {
         font-size: 4rem;
         @include mixins.gridplacement(2 / span 12, 1 / span 2);
@@ -34,14 +35,14 @@
 }
 
 .imgWrapper {
-    padding: .5rem;
+    padding: 0.5rem;
     background-color: white;
     margin-bottom: 1rem;
 }
 
 .socials {
     @include mixins.flex(space-between, row);
-    @include mixins.gridplacement( 1 / span 6, 5 / span 1);
+    @include mixins.gridplacement(1 / span 6, 5 / span 1);
     span {
         font-family: variables.$font;
     }
@@ -52,7 +53,7 @@
     font-size: 1.1rem;
     text-transform: capitalize;
     span {
-        margin-left: .4rem;
+        margin-left: 0.4rem;
     }
 }
 
@@ -70,7 +71,7 @@
 
 .projects__btn {
     @include mixins.flex(center, column);
-    @include mixins.gridplacement(17 / span 4, 3 / span 2)
+    @include mixins.gridplacement(17 / span 4, 3 / span 2);
 }
 
 .projBtn {
@@ -81,7 +82,7 @@
     cursor: pointer;
     border: none;
     outline: none;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 .fa-arrow-right {

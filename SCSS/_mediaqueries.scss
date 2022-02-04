@@ -4,6 +4,14 @@
 
 // ===============================================> TABLET VIEW ==========>
 @media all and (max-width: 768px) {
+    .nav {
+        &__list {
+            display: none ;
+        }
+        .hamburger {
+            display: block;
+        }
+    }
     .grid {
         @include mixins.grid(1fr, repeat(7, 1fr));
         row-gap: 1rem;
@@ -154,3 +162,4 @@
     }
 }
 // <=============================================== END OF MOBILE VIEW <==========
+
