@@ -3,7 +3,6 @@
 @use '../UTILS/variables';
 
 .grid {
-    
     @include mixins.grid(repeat(20,1fr), repeat(5, 1fr));   
     h1 {
         font-size: 4rem;
