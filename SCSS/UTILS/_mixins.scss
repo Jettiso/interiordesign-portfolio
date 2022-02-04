@@ -5,3 +5,14 @@
     justify-content: $jc;
     flex-direction: $fd;
 }
+
+@mixin gridplacement($col, $row) {
+    grid-column: $col;
+    grid-row: $row;
+}
+
+@mixin grid($gtc, $gtr) {
+    display: grid;
+    grid-template-columns: $gtc;
+    grid-template-rows: $gtr;
+}
