@@ -4,6 +4,7 @@
 
 
 .grid {
+    margin-top: 6rem;
     @include mixins.grid(repeat(20, 1fr), repeat(5, 1fr));
     h1 {
         font-size: 4rem;
