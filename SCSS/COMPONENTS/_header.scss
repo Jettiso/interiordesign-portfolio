@@ -14,26 +14,26 @@
         @include mixins.gridplacement(2 / span 2, 2 / span 1);
         align-self: center;
     }
+    .imgContainer {
+        h2 {
+            text-transform: capitalize;
+        }
+        p {
+            color: #a5a5a5;
+        }
+    }
+    
+    .imgContainer1 {
+        @include mixins.gridplacement(1 / span 6, 3 / span 2);
+    }
+    .imgContainer2 {
+        @include mixins.gridplacement(8 / span 6, 2 / span 2);
+    }
+    .imgContainer3 {
+        @include mixins.gridplacement(15 / span 6, 1 / span 2);
+    }
 }
 
-.imgContainer {
-    h2 {
-        text-transform: capitalize;
-    }
-    p {
-        color: #a5a5a5;
-    }
-}
-
-.imgContainer1 {
-    @include mixins.gridplacement(1 / span 6, 3 / span 2);
-}
-.imgContainer2 {
-    @include mixins.gridplacement(8 / span 6, 2 / span 2);
-}
-.imgContainer3 {
-    @include mixins.gridplacement(15 / span 6, 1 / span 2);
-}
 
 .imgWrapper {
     padding: 0.5rem;
