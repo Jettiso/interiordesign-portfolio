@@ -14,10 +14,15 @@ const swiper = new Swiper(".swiper", {
         prevEl: ".swiper-button-prev",
     },
 
-    // Fade effect
-    effect: 'fade', 
+    // effect
+    effect: "fade",
     fadeEffect: {
-        crossFade: true
+        crossFade: true,
     },
-    
+
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
+
 });
