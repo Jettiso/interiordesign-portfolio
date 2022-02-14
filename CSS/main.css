@@ -28,7 +28,6 @@ img {
 
 body {
   background-color: #ebebeb;
-  cursor: none;
 }
 
 nav {
@@ -194,6 +193,9 @@ nav {
   flex-direction: column;
   grid-column: 17/span 4;
   grid-row: 3/span 2;
+}
+.projects__btn a {
+  width: 100%;
 }
 
 .projBtn {
