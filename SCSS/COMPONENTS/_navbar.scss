@@ -7,31 +7,36 @@ nav {
     left: 0;
     width: 100%;
     height: 10vh;
-    margin-bottom: 4rem;
-    padding: 1rem;
     background-color: #ebebeb;
-    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
 }
 
 .nav {
     @include mixins.flex(space-between, row);
+    width: 100%;
     height: 100%;
+    padding: 0 1rem;
     .logo {
         font-size: 2.5rem;
         text-transform: uppercase;
     }
     &__list {
-        @include mixins.flex(flex-start, row);
+        @include mixins.flex(center, row);
         height: 100%;
         li {
             height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         &-items {
-            padding: 1rem 1rem;
+            padding: 1rem;
             margin-left: 1rem;
             color: #000000;
             text-transform: capitalize;
-            height: 100%;
+            height: 100%;   
         }
     }
     .hamburger {
