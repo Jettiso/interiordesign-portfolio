@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Interior Design Portfolio</title>
-    <link rel="stylesheet" href="./CSS/main.css">
-</head>
-<body>
-    <div class="container">
-        <nav>
-            <div class="nav">
-                <span class="logo">jettison</span>
-                <ul class="nav__list">
-                    <li>
-                        <a href="./index.html" class="nav__list-items">home</a>
-                    </li>
-                    <li><a href="./about.html" class="nav__list-items current">about</a></li>
-                    <li>
-                        <a href="./projects.html" class="nav__list-items"
-                            >projects</a
-                        >
-                    </li>
-                    <li><a href="#" class="nav__list-items">contact</a></li>
-                </ul>
-                <div class="hamburger" id="hamburger-1">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About | Interior Design Portfolio</title>
+        <link rel="stylesheet" href="./CSS/main.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <div class="nav">
+                    <span class="logo">jettison</span>
+                    <ul class="nav__list">
+                        <li>
+                            <a href="./index.html" class="nav__list-items"
+                                >home</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="./about.html"
+                                class="nav__list-items current"
+                                >about</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./projects.html" class="nav__list-items"
+                                >projects</a
+                            >
+                        </li>
+                        <li><a href="./contact.html" class="nav__list-items">contact</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger-1">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </nav>
+            <div class="about">
+                <div class="about__profileImg">
+                    <img src="./IMAGES/me.jpg" alt="Designer" />
+                </div>
+                <div class="about__textContainer">
+                    <h1>jettison</h1>
+                    <h3>Interrior Designer / Architect</h3>
+                    <p>
+                        I am a freelance architect and interior designer based
+                        in US, California. I have graduated from the department
+                        of architecture.
+                    </p>
                 </div>
             </div>
-        </nav>
-    </div>
-</body>
+            <div class="mobileNav">
+                <ul>
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./projects.html">projects</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <script src="./JS/app.js"></script>
+    </body>
 </html>

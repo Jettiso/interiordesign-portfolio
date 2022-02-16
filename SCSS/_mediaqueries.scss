@@ -120,6 +120,12 @@
     .nav__list {
         font-size: 1.3rem;
     }
+    .about {
+        flex-wrap: wrap;
+        &__profileImg {
+            margin: 2rem auto !important;
+        }
+    }
 }
 // ===============================================> MOBILE VIEW ==========>
 @media all and (max-width: 430px) {
