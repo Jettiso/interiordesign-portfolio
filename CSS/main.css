@@ -230,6 +230,119 @@ nav {
   width: 100%;
 }
 
+.swiper {
+  max-width: 100%;
+  height: 600px;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 8rem;
+  padding: 2rem;
+  background-color: #070606;
+}
+.about__profileImg {
+  max-width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+.about__profileImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about h1 {
+  margin-bottom: 0.5rem;
+}
+.about h3 {
+  margin-bottom: 1.5rem;
+}
+.about h1, .about h3 {
+  text-transform: uppercase;
+  color: #fefefe;
+}
+.about p {
+  font-size: 1.5rem;
+  color: #fefefe;
+  line-height: 1.7rem;
+}
+
+.contain {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.contacts {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contacts h1 {
+  font-size: 4.5rem;
+  margin-bottom: 4rem;
+  background: #c33764;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1d2671, #c33764);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contacts ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contacts .fa-brands {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
+.contacts a {
+  position: relative;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-size: 1.5rem;
+  color: black;
+}
+.contacts a:after {
+  content: "";
+  position: absolute;
+  background: #fc466b;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3f5efb, #fc466b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -8px;
+  transition: 0.3s;
+}
+.contacts a:hover:after {
+  width: 100%;
+}
+
 @media all and (max-width: 768px) {
   .mobileNav {
     position: fixed;
@@ -371,6 +484,18 @@ nav {
   .about__profileImg {
     margin: 2rem auto !important;
   }
+
+  .contacts h1 {
+    font-size: 5rem;
+  }
+  .contacts ul {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .contacts ul .fa-brands {
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+  }
 }
 @media all and (max-width: 430px) {
   .grid {
@@ -459,50 +584,8 @@ nav {
   .nav__list {
     display: none;
   }
-}
-.swiper {
-  max-width: 100%;
-  height: 600px;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
-}
 
-.about {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
-  margin-top: 8rem;
-  padding: 2rem;
-  background-color: #070606;
-}
-.about__profileImg {
-  max-width: 200px;
-  max-height: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin-right: 2rem;
-}
-.about__profileImg img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.about h1 {
-  margin-bottom: 0.5rem;
-}
-.about h3 {
-  margin-bottom: 1.5rem;
-}
-.about h1, .about h3 {
-  text-transform: uppercase;
-  color: #fefefe;
-}
-.about p {
-  font-size: 1.5rem;
-  color: #fefefe;
-  line-height: 1.7rem;
+  .contacts h1 {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=main.css.map */

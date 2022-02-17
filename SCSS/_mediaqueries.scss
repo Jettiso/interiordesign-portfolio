@@ -126,6 +126,19 @@
             margin: 2rem auto !important;
         }
     }
+    .contacts {
+        h1 {
+            font-size: 5rem;
+        }
+        ul {
+            align-items: flex-start;
+            flex-direction: column;
+            .fa-brands {
+                margin-bottom: 3rem;
+                margin-left: 1rem;
+            }
+        }
+    }
 }
 // ===============================================> MOBILE VIEW ==========>
 @media all and (max-width: 430px) {
@@ -198,5 +211,13 @@
     .nav__list {
         display: none;
     }
+    .contacts {
+        h1 {
+            font-size: 3rem;
+        }
+    }
 }
+
 // <=============================================== END OF MOBILE VIEW <==========
+
+
